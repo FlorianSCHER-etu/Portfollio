@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio BUT RT - [Votre Nom]</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>Mon Portfolio BUT RT</h2>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a href="#accueil" class="nav-link active" data-page="accueil">
+                        <i class="fas fa-home"></i> Accueil
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#presentation" class="nav-link" data-page="presentation">
+                        <i class="fas fa-user"></i> Présentation
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#projets" class="nav-link" data-page="projets">
+                        <i class="fas fa-project-diagram"></i> Projets BUT
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#entreprise" class="nav-link" data-page="entreprise">
+                        <i class="fas fa-building"></i> Entreprise
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link" data-page="contact">
+                        <i class="fas fa-envelope"></i> Contact
+                    </a>
+                </li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Container principal -->
+    <div class="container">
+        <!-- Page Accueil -->
+        <section id="accueil" class="page active">
+            <div class="hero">
+                <div class="hero-content">
+                    <div class="profile-image">
+                        <img src="Images/data.png" alt="Photo de profil" id="profile-img">
+                    </div>
+                    <h1 class="hero-title">Bienvenue sur mon Portfolio</h1>
+                    <h2 class="hero-subtitle">BUT Réseaux et Télécommunications</h2>
+                    <p class="hero-description">
+                        Étudiant passionné par les technologies réseau, l'infrastructure informatique
+                        et les télécommunications. Ce portfolio présente mon parcours, mes compétences
+                        et mes réalisations dans le cadre de ma formation BUT RT.
+                    </p>
+                    <div class="hero-buttons">
+                        <button class="btn btn-primary" onclick="showPage('presentation')">
+                            <i class="fas fa-user"></i> Découvrir mon profil
+                        </button>
+                        <button class="btn btn-secondary" onclick="showPage('projets')">
+                            <i class="fas fa-project-diagram"></i> Voir mes projets
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Compétences overview -->
+            <div class="competences-grid">
+                <h3>Mes 5 Compétences BUT RT</h3>
+                <div class="grid">
+                    <a href="comp1.html" class="competence-card">
+                        <i class="fas fa-network-wired"></i>
+                        <h4>Administrer les réseaux et l'internet</h4>
+                        <p>Configuration, maintenance et sécurisation des infrastructures réseau</p>
+                    </a>
+                    <a href="comp2.html" class="competence-card">
+                        <i class="fas fa-plug"></i>
+                        <h4>Connecter les entreprises et les usages</h4>
+                        <p>Mise en place de solutions de connectivité adaptées aux besoins</p>
+                    </a>
+                    <a href="comp3.html" class="competence-card">
+                        <i class="fas fa-code"></i>
+                        <h4>Créer des outils et applications pour les RT</h4>
+                        <p>Développement d'applications dédiées aux réseaux et télécoms</p>
+                    </a>
+                    <a href="comp4.html" class="competence-card">
+                        <i class="fas fa-shield-alt"></i>
+                        <h4>Administration</h4>
+                        <p>Gestion de la sécurité et protection des données</p>
+                    </a>
+                    <a href="comp4.html" class="competence-card">
+                        <i class="fas fa-shield-alt"></i>
+                        <h4>Surveillance</h4>
+                        <p>Gestion de la sécurité et protection des données</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Page Présentation -->
+        <section id="presentation" class="page">
+            <div class="page-header">
+                <h1><i class="fas fa-user"></i> Présentation Personnelle</h1>
+            </div>
+
+            <div class="presentation-content">
+                <div class="presentation-card">
+                    <div class="card-header">
+                        <h2>Qui suis-je ?</h2>
+                    </div>
+                    <div class="card-content">
+                        <div class="profile-section">
+                            <img src="https://via.placeholder.com/150x150/667eea/ffffff?text=Photo" alt="Photo profil"
+                                class="profile-photo">
+                            <div class="profile-info">
+                                <h3>[Votre Nom Prénom]</h3>
+                                <p class="profile-title">Étudiant BUT Réseaux et Télécommunications</p>
+                                <p class="profile-year">Année [1/2/3] - Semestre [S1/S2/S3/S4/S5/S6]</p>
+                            </div>
+                        </div>
+
+                        <div class="description">
+                            <h4>Mon parcours</h4>
+                            <p>
+                                [Décrivez votre parcours scolaire, vos motivations pour avoir choisi le BUT RT,
+                                vos centres d'intérêt dans le domaine des réseaux et télécommunications...]
+                            </p>
+
+                            <h4>Mes objectifs</h4>
+                            <ul>
+                                <li>Objectif académique : [Ex: Valider mon BUT avec mention, me spécialiser en
+                                    cybersécurité...]</li>
+                                <li>Objectif professionnel : [Ex: Devenir administrateur réseau, ingénieur télécoms...]
+                                </li>
+                                <li>Objectif personnel : [Ex: Développer mes compétences en leadership, apprendre de
+                                    nouvelles technologies...]</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skills-section">
+                    <h3>Mes compétences techniques</h3>
+                    <div class="skills-grid">
+                        <div class="skill-category">
+                            <h4><i class="fas fa-network-wired"></i> Réseaux</h4>
+                            <div class="skill-list">
+                                <span class="skill-tag">TCP/IP</span>
+                                <span class="skill-tag">VLAN</span>
+                                <span class="skill-tag">Cisco</span>
+                                <span class="skill-tag">Routage</span>
+                            </div>
+                        </div>
+                        <div class="skill-category">
+                            <h4><i class="fas fa-code"></i> Programmation</h4>
+                            <div class="skill-list">
+                                <span class="skill-tag">Python</span>
+                                <span class="skill-tag">Java</span>
+                                <span class="skill-tag">HTML/CSS</span>
+                                <span class="skill-tag">JavaScript</span>
+                            </div>
+                        </div>
+                        <div class="skill-category">
+                            <h4><i class="fas fa-server"></i> Systèmes</h4>
+                            <div class="skill-list">
+                                <span class="skill-tag">Linux</span>
+                                <span class="skill-tag">Windows Server</span>
+                                <span class="skill-tag">Docker</span>
+                                <span class="skill-tag">VMware</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Page Projets BUT -->
+        <section id="projets" class="page">
+            <div class="page-header">
+                <h1><i class="fas fa-project-diagram"></i> Mes Projets BUT (SAÉ)</h1>
+                <p>Analyse réflexive de mes Situations d'Apprentissage et d'Évaluation</p>
+            </div>
+
+            <div class="projets-container">
+                <!-- Projet 1 -->
+                <div class="projet-card">
+                    <div class="projet-header">
+                        <h3>SAÉ [Numéro] - [Nom du projet]</h3>
+                        <span class="semestre-badge">Semestre [X]</span>
+                    </div>
+
+                    <div class="projet-content">
+                        <div class="projet-section">
+                            <h4><i class="fas fa-bullseye"></i> Objectifs du projet</h4>
+                            <ul>
+                                <li>[Objectif 1 - ex: Configurer un réseau local d'entreprise]</li>
+                                <li>[Objectif 2 - ex: Mettre en place la sécurité réseau]</li>
+                                <li>[Objectif 3 - ex: Documenter l'architecture]</li>
+                            </ul>
+                        </div>
+
+                        <div class="projet-section">
+                            <h4><i class="fas fa-tasks"></i> Mes missions personnelles</h4>
+                            <p>
+                                Dans ce projet [de groupe/individuel], j'ai eu pour missions :
+                            </p>
+                            <ul>
+                                <li>[Mission 1 avec détails de votre contribution]</li>
+                                <li>[Mission 2 avec détails de votre contribution]</li>
+                                <li>[Mission 3 avec détails de votre contribution]</li>
+                            </ul>
+                        </div>
+
+                        <div class="projet-section">
+                            <h4><i class="fas fa-trophy"></i> Résultats obtenus</h4>
+                            <div class="resultats">
+                                <div class="resultat-item">
+                                    <strong>Livrables :</strong>
+                                    <p>[Liste des documents/réalisations produites]</p>
+                                </div>
+                                <div class="resultat-item">
+                                    <strong>Compétences mobilisées :</strong>
+                                    <div class="competences-tags">
+                                        <span class="comp-tag comp-1">Administrer réseaux</span>
+                                        <span class="comp-tag comp-2">Connecter entreprises</span>
+                                    </div>
+                                </div>
+                                <div class="resultat-item">
+                                    <strong>Apprentissages Critiques validés :</strong>
+                                    <p>[AC1.1, AC1.2, etc. - selon le référentiel]</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="projet-section critique">
+                            <h4><i class="fas fa-lightbulb"></i> Analyse critique et réflexive</h4>
+                            <div class="analyse-grid">
+                                <div class="analyse-positive">
+                                    <h5><i class="fas fa-plus-circle"></i> Points forts</h5>
+                                    <ul>
+                                        <li>[Ce qui a bien fonctionné]</li>
+                                        <li>[Compétences maîtrisées]</li>
+                                        <li>[Méthodes efficaces utilisées]</li>
+                                    </ul>
+                                </div>
+                                <div class="analyse-negative">
+                                    <h5><i class="fas fa-exclamation-triangle"></i> Difficultés rencontrées</h5>
+                                    <ul>
+                                        <li>[Problèmes techniques]</li>
+                                        <li>[Compétences à améliorer]</li>
+                                        <li>[Défis organisationnels]</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="analyse-apprentissage">
+                                <h5><i class="fas fa-graduation-cap"></i> Que j'ai appris</h5>
+                                <p>
+                                    Ce projet m'a permis de comprendre [apprentissages techniques et méthodologiques].
+                                    J'ai développé ma capacité à [compétences transversales].
+                                    Pour l'avenir, je dois renforcer [axes d'amélioration].
+                                </p>
+                            </div>
+                            <div class="analyse-adaptation">
+                                <h5><i class="fas fa-arrows-alt"></i> Transférabilité</h5>
+                                <p>
+                                    Ces compétences peuvent être adaptées à d'autres contextes comme
+                                    [exemples de situations similaires où appliquer ces acquis].
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Projet 2 - Template -->
+                <div class="projet-card">
+                    <div class="projet-header">
+                        <h3>SAÉ [Numéro] - [Nom du projet 2]</h3>
+                        <span class="semestre-badge">Semestre [X]</span>
+                    </div>
+                    <div class="projet-content">
+                        <p class="projet-placeholder">
+                            <i class="fas fa-plus"></i>
+                            Cliquez pour ajouter votre deuxième projet SAÉ...
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Bouton d'ajout -->
+                <div class="add-projet-btn">
+                    <button class="btn btn-outline" onclick="ajouterProjet()">
+                        <i class="fas fa-plus"></i> Ajouter un projet SAÉ
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Page Entreprise -->
+        <section id="entreprise" class="page">
+            <div class="page-header">
+                <h1><i class="fas fa-building"></i> Expérience en Entreprise</h1>
+                <p>Stage et alternance dans le domaine des réseaux et télécommunications</p>
+            </div>
+
+            <div class="entreprise-content">
+                <div class="stage-card">
+                    <div class="stage-header">
+                        <div class="entreprise-logo">
+                            <i class="fas fa-building"></i>
+                        </div>
+                        <div class="stage-info">
+                            <h3>[Nom de l'entreprise]</h3>
+                            <p class="stage-poste">[Intitulé du stage/alternance]</p>
+                            <p class="stage-periode">[Période] - [Durée]</p>
+                            <p class="stage-lieu"><i class="fas fa-map-marker-alt"></i> [Ville, Pays]</p>
+                        </div>
+                    </div>
+
+                    <div class="stage-content">
+                        <div class="section">
+                            <h4><i class="fas fa-info-circle"></i> Présentation de l'entreprise</h4>
+                            <p>
+                                [Description de l'entreprise : secteur d'activité, taille,
+                                positionnement sur le marché, technologies utilisées...]
+                            </p>
+                        </div>
+
+                        <div class="section">
+                            <h4><i class="fas fa-tasks"></i> Missions confiées</h4>
+                            <div class="missions-list">
+                                <div class="mission-item">
+                                    <h5>Mission 1 : [Titre]</h5>
+                                    <p>[Description détaillée de la mission et de votre contribution]</p>
+                                </div>
+                                <div class="mission-item">
+                                    <h5>Mission 2 : [Titre]</h5>
+                                    <p>[Description détaillée de la mission et de votre contribution]</p>
+                                </div>
+                                <div class="mission-item">
+                                    <h5>Mission 3 : [Titre]</h5>
+                                    <p>[Description détaillée de la mission et de votre contribution]</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="section">
+                            <h4><i class="fas fa-tools"></i> Technologies et outils utilisés</h4>
+                            <div class="tech-tags">
+                                <span class="tech-tag">[Outil 1]</span>
+                                <span class="tech-tag">[Outil 2]</span>
+                                <span class="tech-tag">[Outil 3]</span>
+                                <span class="tech-tag">[Outil 4]</span>
+                            </div>
+                        </div>
+
+                        <div class="section">
+                            <h4><i class="fas fa-chart-line"></i> Apports professionnels</h4>
+                            <div class="apports-grid">
+                                <div class="apport-item">
+                                    <i class="fas fa-brain"></i>
+                                    <h5>Compétences techniques</h5>
+                                    <p>[Nouvelles compétences acquises]</p>
+                                </div>
+                                <div class="apport-item">
+                                    <i class="fas fa-users"></i>
+                                    <h5>Compétences relationnelles</h5>
+                                    <p>[Travail en équipe, communication...]</p>
+                                </div>
+                                <div class="apport-item">
+                                    <i class="fas fa-eye"></i>
+                                    <h5>Vision métier</h5>
+                                    <p>[Compréhension du secteur, des enjeux...]</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Placeholder pour alternance -->
+                <div class="stage-card placeholder">
+                    <div class="placeholder-content">
+                        <i class="fas fa-briefcase"></i>
+                        <h3>Alternance à venir</h3>
+                        <p>Recherche active d'une entreprise pour une alternance en [année]</p>
+                        <button class="btn btn-primary">Télécharger mon CV</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Page Contact -->
+        <section id="contact" class="page">
+            <div class="page-header">
+                <h1><i class="fas fa-envelope"></i> Me Contacter</h1>
+                <p>N'hésitez pas à me contacter pour toute opportunité ou question</p>
+            </div>
+
+            <div class="contact-content">
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <h3>Mes coordonnées</h3>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <strong>Email</strong>
+                                <p>votre.email@exemple.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <strong>Téléphone</strong>
+                                <p>+33 X XX XX XX XX</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <strong>Localisation</strong>
+                                <p>[Votre ville], France</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fab fa-linkedin"></i>
+                            <div>
+                                <strong>LinkedIn</strong>
+                                <p>linkedin.com/in/votre-profil</p>
+                            </div>
+                        </div>
+
+                        <div class="social-links">
+                            <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                            <a href="#" class="social-link"><i class="fas fa-file-pdf"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="contact-form-container">
+                        <h3>Envoyez-moi un message</h3>
+                        <form class="contact-form" id="contactForm">
+                            <div class="form-group">
+                                <label for="nom">Nom *</label>
+                                <input type="text" id="nom" name="nom" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="sujet">Sujet</label>
+                                <input type="text" id="sujet" name="sujet">
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message *</label>
+                                <textarea id="message" name="message" rows="5" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">
+                                <i class="fas fa-paper-plane"></i> Envoyer
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2025 SCHER Florian - Portfolio Réseaux et Télécommunications</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
